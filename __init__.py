@@ -31,8 +31,12 @@ class ComboDynamicNodeCozy:
     """
     A class to represent a dynamic combo changer in ComfyUI.
     """
-    RETURN_TYPES = ()
-    RETURN_NAMES = ()
+    RETURN_TYPES = ("COMBO",)
+    RETURN_NAMES = ("OPTIONS",)
+    OUTPUT_IS_LIST = (False,)
+    OUTPUT_TOOLTIPS = (
+        "Plug into an existing Combobox widget to grab it's values",
+    )
     CATEGORY = "_EXAMPLES"
 
     @classmethod
